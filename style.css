@@ -1,0 +1,10 @@
+ #container aside.drawer{
+    border-left: 1px solid gray;
+    background-color: white;
+}
+
+#container > footer{
+    border-top: 1px solid gray;
+    color: white;
+    background-color: cornflowerblue;
+}

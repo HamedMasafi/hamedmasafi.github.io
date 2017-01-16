@@ -1,0 +1,129 @@
+body{
+    direction: rtl;
+}
+
+.navbar-logo {
+    position: absolute;
+    top: 5px;
+    left: 15px;
+    z-index: 1051;
+    text-align: center;
+}
+
+#container{
+    overflow: hidden;
+}
+
+#container aside.drawer{
+    position: absolute;
+    width: 220px;
+    top: 0;
+    right: -220px;
+    bottom: 0;
+    z-index: 116;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    -webkit-transition: right .3s ease;
+    transition: right .3s ease;
+    padding-top: 30px;
+}
+
+#container > div > section{
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+body.sidebar-open #container aside.drawer{
+    right: 0;
+}
+
+#container > div > section, #container > footer{
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-transition: transform .3s ;
+    transition: transform .3s ;
+}
+
+/*
+body.sidebar-open #container > div > section,
+body.sidebar-open #container > footer{
+    -webkit-transform: translate3d(-220px, 0, 0);
+    transform: translate3d(-220px, 0, 0);
+}
+*/
+
+#container > div > aside.drawer > .visible-xs{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: block;
+    width: 100%;
+}
+
+#container > div > aside.drawer > div{
+    display: block;
+/*    height: 100%;*/
+    width: 100%;
+}
+
+@media (max-width:768px){
+    /* xs */
+    #container aside.drawer{
+/*        height: 100%;*/
+    }    
+}
+@media (min-width:768px){
+    /* sm */
+    
+    #container header{
+        margin-bottom: -21px;
+    }
+    
+    body.sidebar-open #container > div > section, #container > footer{
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        -webkit-transition: transform .3s ;
+        transition: transform .3s ;
+    }
+
+    #container > div{
+        display: table;
+        width: 100%;
+    }
+
+    #container aside.drawer, #container > div > section{
+        display: table-cell;
+        position: inherit;
+        float: none;
+        vertical-align: top;
+    }
+}
+@media (min-width:992px){
+    /* ms */
+    #container aside.drawer{
+/*        height: 100%;*/
+    }
+}
+@media (min-width:1200px){
+    /* lg */
+    
+    #container aside.drawer{
+/*        display: none;*/
+    }
+
+    #container{
+    } 
+
+    
+}
+
+@media print{
+    header{
+        display: none;
+    }
+    footer{
+        display: none;
+    }
+
+}
+
+
