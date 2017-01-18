@@ -14,7 +14,18 @@ body{
     overflow: hidden;
 }
 
-#container aside.drawer{
+#container > div > .main-section{
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+
+body > #container > div > aside.drawer{
+    display: none;
+}
+
+body.has-sidebar > #container aside.drawer{
+    display: block;
     position: absolute;
     width: 220px;
     top: 0;
@@ -28,16 +39,11 @@ body{
     padding-top: 30px;
 }
 
-#container > div > section{
-    padding-right: 20px;
-    padding-left: 20px;
-}
-
-body.sidebar-open #container aside.drawer{
+body.sidebar-open > #container aside.drawer{
     right: 0;
 }
 
-#container > div > section, #container > footer{
+#container > div > .main-section, #container > footer{
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
     -webkit-transition: transform .3s ;
@@ -45,14 +51,20 @@ body.sidebar-open #container aside.drawer{
 }
 
 /*
-body.sidebar-open #container > div > section,
+body.sidebar-open #container > div > .main-section,
 body.sidebar-open #container > footer{
     -webkit-transform: translate3d(-220px, 0, 0);
     transform: translate3d(-220px, 0, 0);
 }
 */
 
-#container > div > aside.drawer > .visible-xs{
+body > #container > header .toggle-sidebar{
+    display: none!important;
+}
+body.has-sidebar > #container> header .toggle-sidebar{
+    display: block!important;
+}
+body.has-sidebar > #container > div > aside.drawer > visible-xs{
     margin-top: 10px;
     margin-bottom: 10px;
     display: block;
@@ -78,7 +90,10 @@ body.sidebar-open #container > footer{
         margin-bottom: -21px;
     }
     
-    body.sidebar-open #container > div > section, #container > footer{
+    body.has-sidebar > #container> header .toggle-sidebar, body > #container> header .toggle-sidebar{
+        display: none!important;
+    }
+    body.sidebar-open #container > div > .main-section, #container > footer{
         -webkit-transform: translateZ(0);
         transform: translateZ(0);
         -webkit-transition: transform .3s ;
@@ -90,7 +105,7 @@ body.sidebar-open #container > footer{
         width: 100%;
     }
 
-    #container aside.drawer, #container > div > section{
+    body.has-sidebar #container aside.drawer, body.sidebar-open #container > div > .main-section{
         display: table-cell;
         position: inherit;
         float: none;

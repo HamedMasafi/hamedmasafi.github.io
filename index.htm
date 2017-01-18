@@ -18,7 +18,7 @@
                     <em class="fa fa-navicon"></em>
                 </a>
             </div>
-            <nav class="navbar nav-navbar navbar-default">
+            <nav class="navbar nav-navbar topnavbar">
                 <div class="navbar-logo hidden-xs">
                     <em class="icon-phone"></em>
                     <span>
@@ -33,8 +33,8 @@
                         خریدی مطمئن، کالای مطمئن
                     </span>
                 </div>
-                <ul class="nav nav-pills">
-                    <li class="visible-xs" style="z-index: 9999">
+                <ul class="nav nav-pills bg-white">
+                    <li class="visible-xs toggle-sidebar" style="z-index: 9999">
                         <a href="#" class="sidebar-toggle">
                             <em class="fa fa-navicon"></em>
                         </a>
@@ -52,8 +52,7 @@
                     </li>
                 </ul>
 
-
-                <ul class="nav nav-pills">
+                <ul class="nav nav-pills bg-white">
                     <li>
                         <form role="search" action="/Home/Search" class="hidden-xs" style="padding-top:5px">
                             <div class="form-group has-feedback">
@@ -79,7 +78,7 @@
                 </ul>
 
 
-                <ul class="nav nav-pills navbar-inverse visible-sm-block visible-md-block visible-lg-block">
+                <ul class="nav nav-pills visible-sm-block visible-md-block visible-lg-block">
                     <li role="presentation" class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                             Dropdown <span class="caret"></span>
@@ -108,9 +107,12 @@
             </div>
         </aside>
 
-        <section>
+        <div class="main-section">
             <h2>This is main section</h2>
             <input type="checkbox" id="boxed" />Boxed
+            <br />
+            <input type="checkbox" id="has_sidebar" />Has sidebar
+            
             
             <div class="row">
                 <div class="col-md-6">
@@ -126,7 +128,7 @@
             <span class="visible-md-block">md</span>
             <span class="visible-sm-block">sm</span>
             <span class="visible-xs-block">xs</span>
-        </section>
+        </div>
         </div>
         
         <footer class="section primary">
@@ -178,6 +180,12 @@
                     container.addClass("container-fluid");
                     container.removeClass("container");
                 }
+            })
+            $("#has_sidebar").click(function(){
+                if($(this).is(":checked"))
+                    $("body").addClass("has-sidebar");
+                else 
+                    $("body").removeClass("has-sidebar");
             })
             //END TEST
 
