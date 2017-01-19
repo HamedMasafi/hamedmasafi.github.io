@@ -1,30 +1,32 @@
-body{
+body {
     direction: rtl;
 }
 
 .navbar-logo {
-    position: absolute;
-    top: 5px;
-    left: 15px;
-    z-index: 1051;
+    /* position: absolute; */
+    /* top: 5px; */
+    /* left: 15px; */
+    /* z-index: 1051; */
     text-align: center;
+    float: left;
+    height: 0;
+    margin-top: 24px;
 }
 
-#container{
+#container {
     overflow: hidden;
 }
 
-#container > div > .main-section{
+#container > div > .main-section {
     padding-right: 20px;
     padding-left: 20px;
 }
 
-
-body > #container > div > aside.drawer{
+body > #container > div > aside.drawer {
     display: none;
 }
 
-body.has-sidebar > #container aside.drawer{
+body.has-sidebar > #container aside.drawer {
     display: block;
     position: absolute;
     width: 220px;
@@ -39,16 +41,18 @@ body.has-sidebar > #container aside.drawer{
     padding-top: 30px;
 }
 
-body.sidebar-open > #container aside.drawer{
+body.sidebar-open > #container aside.drawer {
     right: 0;
 }
 
-#container > div > .main-section, #container > footer{
+#container > div > .main-section,
+#container > footer {
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
-    -webkit-transition: transform .3s ;
-    transition: transform .3s ;
+    -webkit-transition: transform .3s;
+    transition: transform .3s;
 }
+
 
 /*
 body.sidebar-open #container > div > .main-section,
@@ -58,87 +62,83 @@ body.sidebar-open #container > footer{
 }
 */
 
-body > #container > header .toggle-sidebar{
+body > #container > header .toggle-sidebar {
     display: none!important;
 }
-body.has-sidebar > #container> header .toggle-sidebar{
+
+body.has-sidebar > #container> header .toggle-sidebar {
     display: block!important;
 }
-body.has-sidebar > #container > div > aside.drawer > visible-xs{
+
+body.has-sidebar > #container > div > aside.drawer > visible-xs {
     margin-top: 10px;
     margin-bottom: 10px;
     display: block;
     width: 100%;
 }
 
-#container > div > aside.drawer > div{
+#container > div > aside.drawer > div {
     display: block;
-/*    height: 100%;*/
+    /*    height: 100%;*/
     width: 100%;
 }
 
-@media (max-width:768px){
+@media (max-width:768px) {
     /* xs */
-    #container aside.drawer{
-/*        height: 100%;*/
-    }    
+    #container aside.drawer {
+        /*        height: 100%;*/
+    }
 }
-@media (min-width:768px){
+
+@media (min-width:768px) {
     /* sm */
-    
-    #container header{
+    #container header {
         margin-bottom: -21px;
     }
-    
-    body.has-sidebar > #container> header .toggle-sidebar, body > #container> header .toggle-sidebar{
+    body.has-sidebar > #container> header .toggle-sidebar,
+    body > #container> header .toggle-sidebar {
         display: none!important;
     }
-    body.sidebar-open #container > div > .main-section, #container > footer{
+    body.sidebar-open #container > div > .main-section,
+    #container > footer {
         -webkit-transform: translateZ(0);
         transform: translateZ(0);
-        -webkit-transition: transform .3s ;
-        transition: transform .3s ;
+        -webkit-transition: transform .3s;
+        transition: transform .3s;
     }
-
-    #container > div{
+    #container > div {
         display: table;
         width: 100%;
     }
-
-    body.has-sidebar #container aside.drawer, body.sidebar-open #container > div > .main-section{
+    body.has-sidebar #container aside.drawer,
+    body.sidebar-open #container > div > .main-section {
         display: table-cell;
         position: inherit;
         float: none;
         vertical-align: top;
     }
 }
-@media (min-width:992px){
+
+@media (min-width:992px) {
     /* ms */
-    #container aside.drawer{
-/*        height: 100%;*/
+    #container aside.drawer {
+        /*        height: 100%;*/
     }
 }
-@media (min-width:1200px){
+
+@media (min-width:1200px) {
     /* lg */
-    
-    #container aside.drawer{
-/*        display: none;*/
+    #container aside.drawer {
+        /*        display: none;*/
     }
-
-    #container{
-    } 
-
-    
+    #container {}
 }
 
-@media print{
-    header{
+@media print {
+    header {
         display: none;
     }
-    footer{
+    footer {
         display: none;
     }
-
 }
-
-

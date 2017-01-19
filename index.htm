@@ -1,68 +1,46 @@
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="Content/vendor/bootstrap/css/bootstrap-rtl.css" rel="stylesheet" />
     <link href="Content/vendor/font-awesome/css/font-awesome.css" rel="stylesheet" />
-
     <link href="layout.css" rel="stylesheet" />
-    <link href="style.css" rel="stylesheet" />
-</head>
+    <link href="style.css" rel="stylesheet" /> </head>
+
 <body>
-
-
-    <div id="container" class="container-fluid">
-        <header>
-            <div class="navbar-logo hidden">
-                <a href="#" class="sidebar-toggle">
-                    <em class="fa fa-navicon"></em>
-                </a>
-            </div>
-            <nav class="navbar nav-navbar topnavbar">
-                <div class="navbar-logo hidden-xs">
-                    <em class="icon-phone"></em>
-                    <span>
-                        شماره تماس: 44827753-013
-                    </span>
+    <header class="navbar-fixed-top2">
+        <div class="navbar-logo hidden">
+            <a href="#" class="sidebar-toggle"> <em class="fa fa-navicon"></em> </a>
+        </div>
+        <nav class="navbar nav-navbar topnavbar navbar-default">
+            <div class="container-fluid container-a">
+                <div class="navbar-logo hidden-xs"> <em class="icon-phone"></em> <span>
+                            شماره تماس: 44827753-013
+                        </span>
                     <br>
-                    <a href="/">
-                        <img src="http://pmkala.ir/Content/app/img/text-logo.jpg">
-                    </a>
-                    <br>
-                    <span>
-                        خریدی مطمئن، کالای مطمئن
-                    </span>
-                </div>
+                    <a href="/"> <img src="http://pmkala.ir/Content/app/img/text-logo.jpg"> </a>
+                    <br> <span>
+                            خریدی مطمئن، کالای مطمئن
+                        </span> </div>
                 <ul class="nav nav-pills bg-white">
                     <li class="visible-xs toggle-sidebar" style="z-index: 9999">
-                        <a href="#" class="sidebar-toggle">
-                            <em class="fa fa-navicon"></em>
-                        </a>
+                        <a href="#" class="sidebar-toggle"> <em class="fa fa-navicon"></em> </a>
                     </li>
+                    <li> <a href="#" role="button">
+                                ورود
+                            </a> </li>
                     <li>
-                        <a href="#" role="button">
-                            ورود
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" role="button">
-                            <em class="fa fa-user"></em>
-                            صفحه خانگی
-                        </a>
+                        <a href="#" role="button"> <em class="fa fa-user"></em> صفحه خانگی </a>
                     </li>
                 </ul>
-
                 <ul class="nav nav-pills bg-white">
                     <li>
                         <form role="search" action="/Home/Search" class="hidden-xs" style="padding-top:5px">
                             <div class="form-group has-feedback">
-                                <a href="/Store/Basket" class="btn btn-labeled btn-success basket_pay">
-                                    <span class="btn-label" id="basket_label">
-                                        <i class="fa fa-shopping-cart"></i>
-                                    </span>سبد خرید
-
-
-                                </a>
+                                <a href="/Store/Basket" class="btn btn-labeled btn-success basket_pay"> <span class="btn-label" id="basket_label">
+                                            <i class="fa fa-shopping-cart"></i>
+                                        </span>سبد خرید </a>
                             </div>
                         </form>
                     </li>
@@ -76,124 +54,143 @@
                         </form>
                     </li>
                 </ul>
-
-
                 <ul class="nav nav-pills visible-sm-block visible-md-block visible-lg-block">
-                    <li role="presentation" class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                    <li role="presentation" class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                             Dropdown <span class="caret"></span>
                         </a>
-                        <ul class="dropdown-menu">
-                            ...
-                        </ul>
+                        <ul class="dropdown-menu"> ... </ul>
                     </li>
                 </ul>
-            </nav>
-        </header>
-
+            </div>
+        </nav>
+    </header>
+    <div id="container" class="container-a container-fluid">
         <div>
-        <aside class="drawer">
-            <div class="visible-xs">
-                <a href="/">
-                    <img src="http://pmkala.ir/Content/app/img/text-logo.jpg" class="img-responsive">
-                </a>
-            </div>
-            <div class=".aside-inner">
-                ورود <br />
-                ثبت نام <br />
-                صفحه خانگی <br />
-                داشبورد <br />
-                کمک
-            </div>
-        </aside>
-
-        <div class="main-section">
-            <h2>This is main section</h2>
-            <input type="checkbox" id="boxed" />Boxed
-            <br />
-            <input type="checkbox" id="has_sidebar" />Has sidebar
-            
-            
-            <div class="row">
-                <div class="col-md-6">
-                    Salam
+            <aside class="drawer">
+                <div class="visible-xs">
+                    <a href="/"> <img src="http://pmkala.ir/Content/app/img/text-logo.jpg" class="img-responsive"> </a>
                 </div>
-                <div class="col-md-6">
-                    Salam<br>
-                    Another
-                </div>
-            </div>
-            
-            <span class="visible-lg-block">lg</span>
-            <span class="visible-md-block">md</span>
-            <span class="visible-sm-block">sm</span>
-            <span class="visible-xs-block">xs</span>
+                <div class=".aside-inner"> ورود
+                    <br /> ثبت نام
+                    <br /> صفحه خانگی
+                    <br /> داشبورد
+                    <br /> کمک </div>
+            </aside>
+            <div class="main-section">
+                <h2>This is main section</h2>
+                <input type="checkbox" id="boxed" />Boxed
+                <br />
+                <input type="checkbox" id="has_sidebar" />Has sidebar
+                <br />
+                <input type="checkbox" id="fixed_navbar" />Fixed navbar
+                <div class="row">
+                    <div class="col-md-6"> Salam </div>
+                    <div class="col-md-6"> Salam
+                        <br> Another </div>
+                </div> <span class="visible-lg-block">lg</span> <span class="visible-md-block">md</span> <span class="visible-sm-block">sm</span> <span class="visible-xs-block">xs</span> *
+                <br />*
+                <br />*
+                <br />*
+                <br />*
+                <br />*
+                <br />*
+                <br />*
+                <br />*
+                <br />*
+                <br />*
+                <br />*
+                <br />*
+                <br />*
+                <br />*
+                <br /> *
+                <br />*
+                <br />*
+                <br />*
+                <br />*
+                <br />*
+                <br />*
+                <br />*
+                <br />*
+                <br />*
+                <br />*
+                <br />*
+                <br />*
+                <br />*
+                <br />*
+                <br /> </div>
         </div>
-        </div>
-        
-        <footer class="section primary">
+    </div>
+    <footer class="">
+        <div class="container-a container-fluid">
             <div class="row">
                 <div class="col-sm-6">
                     <h1>Footer header</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisici elit,
+                    <p> Lorem ipsum dolor sit amet, consectetur adipisici elit,
                         <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
-                        <br>Ut enim ad minim veniam, quis nostrud
-                    </p>
+                        <br>Ut enim ad minim veniam, quis nostrud </p>
                 </div>
                 <div class="col-sm-6">
                     <p class="text-info text-right">
                         <br>
-                        <br>
-                    </p>
+                        <br> </p>
                     <div class="row">
-                        <div class="col-md-12 hidden-lg hidden-md hidden-sm text-left">
-                            <a href="#"><i class="fa fa-3x fa-fw fa-instagram text-inverse"></i></a>
-                            <a href="#"><i class="fa fa-3x fa-fw fa-twitter text-inverse"></i></a>
-                            <a href="#"><i class="fa fa-3x fa-fw fa-facebook text-inverse"></i></a>
-                            <a href="#"><i class="fa fa-3x fa-fw fa-github text-inverse"></i></a>
-                        </div>
+                        <div class="col-md-12 hidden-lg hidden-md hidden-sm text-left"> <a href="#"><i class="fa fa-3x fa-fw fa-instagram text-inverse"></i></a> <a href="#"><i class="fa fa-3x fa-fw fa-twitter text-inverse"></i></a> <a href="#"><i class="fa fa-3x fa-fw fa-facebook text-inverse"></i></a> <a href="#"><i class="fa fa-3x fa-fw fa-github text-inverse"></i></a> </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-12 hidden-xs text-right">
-                            <a href="#"><i class="fa fa-3x fa-fw fa-instagram text-inverse"></i></a>
-                            <a href="#"><i class="fa fa-3x fa-fw fa-twitter text-inverse"></i></a>
-                            <a href="#"><i class="fa fa-3x fa-fw fa-facebook text-inverse"></i></a>
-                            <a href="#"><i class="fa fa-3x fa-fw fa-github text-inverse"></i></a>
-                        </div>
+                        <div class="col-md-12 hidden-xs text-right"> <a href="#"><i class="fa fa-3x fa-fw fa-instagram text-inverse"></i></a> <a href="#"><i class="fa fa-3x fa-fw fa-twitter text-inverse"></i></a> <a href="#"><i class="fa fa-3x fa-fw fa-facebook text-inverse"></i></a> <a href="#"><i class="fa fa-3x fa-fw fa-github text-inverse"></i></a> </div>
                     </div>
                 </div>
             </div>
-        </footer>
-    </div>
+        </div>
+    </footer>
     <script src="Content/vendor/jquery/jquery-3.1.1.min.js"></script>
     <script src="Content/vendor/bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript">
         $(function () {
             //START TEST
             $("#boxed").change(function () {
-                var container = $("#container")
-                if($(this).is(":checked")){
+                var container = $(".container-a")
+                if ($(this).is(":checked")) {
                     container.removeClass("container-fluid");
                     container.addClass("container");
-                } else {
+                }
+                else {
                     container.addClass("container-fluid");
                     container.removeClass("container");
                 }
             })
-            $("#has_sidebar").click(function(){
-                if($(this).is(":checked"))
-                    $("body").addClass("has-sidebar");
-                else 
-                    $("body").removeClass("has-sidebar");
+            $("#has_sidebar").click(function () {
+                if ($(this).is(":checked")) $("body").addClass("has-sidebar");
+                else $("body").removeClass("has-sidebar");
             })
-            //END TEST
-
+            $("#fixed_navbar").change(function () {
+                    if ($(this).is(":checked")) $("header").addClass("navbar-fixed-top");
+                    else $("header").removeClass("navbar-fixed-top");
+                    $(window).resize();
+                })
+                //END TEST
+            $(window).scroll(function () {
+                //                var header = $("header");
+                //                if($(window).scrollTop() < 0){
+                //                    header.removeClass("navbar-fixed-top");
+                //                    $("#container").css("padding-top", 0)
+                //                } else {
+                //                    header.addClass("navbar-fixed-top");
+                //                    $("#container").css("padding-top", $("header").height())
+                //                }
+                //                console.log($(window).scrollTop() + "<" + header.height())
+            });
             $(window).resize(function () {
-//                if($(window).width() < 768)
-//                    $("#container aside.drawer").css("top", $("header").height())
-//                else
-//                    $("#container aside.drawer").css("top", 0);
+                //                if($(window).width() < 768)
+                //                    $("#container aside.drawer").css("top", $("header").height())
+                //                else
+                //                    $("#container aside.drawer").css("top", 0);
+                //                if($("header").hasClass("navbar-fixed-top"))
+                var header = $("header");
+                if (header.hasClass("navbar-fixed-top")) $("#container").css("padding-top", $("header").height() - 21)
+                else $("#container").css("padding-top", 0)
+                    //                else
+                    //                    $("#container").css("padding-top", "0")
             })
             $(window).resize();
             $(".sidebar-toggle").click(function () {
@@ -202,4 +199,5 @@
         })
     </script>
 </body>
+
 </html>
