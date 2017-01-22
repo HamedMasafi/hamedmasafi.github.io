@@ -3,10 +3,6 @@ body {
 }
 
 .navbar-logo {
-    /* position: absolute; */
-    /* top: 5px; */
-    /* left: 15px; */
-    /* z-index: 1051; */
     text-align: center;
     float: left;
     height: 0;
@@ -15,6 +11,24 @@ body {
 
 #container {
     overflow: hidden;
+}
+
+body > .dim{
+/*    display: none;*/
+    position: fixed;
+    top:0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: 0;
+    -webkit-transition: opacity .3s;
+    transition: opacity .3s;
+    background-color: black;
+}
+body.sidebar-open > .dim{
+    z-index: 50;
+    opacity: .6;
+/*    display: block;*/
 }
 
 #container > div > .main-section {
@@ -28,7 +42,7 @@ body > #container > div > aside.drawer {
 
 body.has-sidebar > #container aside.drawer {
     display: block;
-    position: absolute;
+    position: fixed;
     width: 220px;
     top: 0;
     right: -220px;
@@ -62,11 +76,11 @@ body.sidebar-open #container > footer{
 }
 */
 
-body > #container > header .toggle-sidebar {
+body header .toggle-sidebar {
     display: none!important;
 }
 
-body.has-sidebar > #container> header .toggle-sidebar {
+body.has-sidebar header .toggle-sidebar {
     display: block!important;
 }
 
@@ -84,10 +98,7 @@ body.has-sidebar > #container > div > aside.drawer > visible-xs {
 }
 
 @media (max-width:768px) {
-    /* xs */
-    #container aside.drawer {
-        /*        height: 100%;*/
-    }
+
 }
 
 @media (min-width:768px) {
@@ -95,8 +106,8 @@ body.has-sidebar > #container > div > aside.drawer > visible-xs {
     #container header {
         margin-bottom: -21px;
     }
-    body.has-sidebar > #container> header .toggle-sidebar,
-    body > #container> header .toggle-sidebar {
+    body.has-sidebar > header .toggle-sidebar,
+    body > header .toggle-sidebar {
         display: none!important;
     }
     body.sidebar-open #container > div > .main-section,

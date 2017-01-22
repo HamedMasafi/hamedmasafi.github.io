@@ -64,6 +64,7 @@
             </div>
         </nav>
     </header>
+    <div class="dim"></div>
     <div id="container" class="container-a container-fluid">
         <div>
             <aside class="drawer">
@@ -180,6 +181,7 @@
                 //                }
                 //                console.log($(window).scrollTop() + "<" + header.height())
             });
+            
             $(window).resize(function () {
                 //                if($(window).width() < 768)
                 //                    $("#container aside.drawer").css("top", $("header").height())
@@ -195,6 +197,9 @@
             $(window).resize();
             $(".sidebar-toggle").click(function () {
                 $("body").toggleClass("sidebar-open")
+            })
+            $("body>.dim").click(function(){
+                $("body").removeClass("sidebar-open")
             })
         })
     </script>
