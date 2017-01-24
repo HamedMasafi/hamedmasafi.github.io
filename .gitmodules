@@ -1,0 +1,3 @@
+[submodule "Content/bootstrap-sidebar"]
+	path = Content/bootstrap-sidebar
+	url = https://github.com/HamedMasafi/bootstrap-sidebar
