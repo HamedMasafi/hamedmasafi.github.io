@@ -1,13 +1,13 @@
- #container aside.drawer{
+ aside.drawer{
     border-left: 1px solid gray;
     background-color: white;
 }
 
-body > footer{
+body > footer, body > .container-a > footer{
     border-top: 1px solid gray;
     color: white;
     background-color: cornflowerblue;
 }
-body > footer i{
+body > footer i, body > .container-a > footer i{
     color: white;
 }
