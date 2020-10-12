@@ -1,7 +1,10 @@
 # Hamed Masafi
+
+![My picture](https://avatars1.githubusercontent.com/u/13809362?s=460&u=b94ba941164f4658455759f7063d43d537cb451f&v=4)
+
 Senior Software Developer
 
-Hamed.Masafi@gmail.com
+[Hamed.Masafi@gmail.com](mailto:Hamed.Masafi@gmail.com)
 
 ---
 ## Skills
@@ -27,6 +30,7 @@ I have a lot of works done with _sql server_ and other ones used fewer.
 ## My open source projects
 
 ### Nut
+
 Advanced, Powerful and easy to use ORM for Qt
 
 [https://github.com/HamedMasafi/Nut](https://github.com/HamedMasafi/Nut)
