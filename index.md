@@ -3,6 +3,27 @@ Senior Software Developer
 
 Hamed.Masafi@gmail.com
 
+---
+## Skills
+
+### Qt/C++
+Qt developer since version 3.4.
+
+### Dot net
+.NET developer since version 1! Including WinForms and asp.net using *C#* langauge.
+
+### Front end development
+I  have some experience in HTML5/CSS3 and Vue.js
+
+### Android development
+I've used _Android studio_ and _java_ language to development of few _android_ apps
+
+### Databases
+Databases I've used: _sqlite_, _ms sql server_, _mysql  and few times _postgresql_
+
+I have a lot of works done with _sql server_ and other ones used fewer.
+
+---
 ## My open source projects
 
 ### Nut
