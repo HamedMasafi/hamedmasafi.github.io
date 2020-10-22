@@ -10,7 +10,7 @@ Senior Software Developer
 ## Skills
 
 ### Qt/C++
-Qt developer since version 3.4.
+Qt developer since version 3
 
 ### Dot net
 .NET developer since version 1! Including WinForms and asp.net using *C#* langauge.
